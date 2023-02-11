@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,*::after,*::before {
+  box-sizing: border-box;
+  margin:0;
+}
+
+body {
+  font-family: 'Bona Nova', serif;
+  transition:all 2s ease-in-out;
+}
+
+.bg-white-shadow {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.15) 8%,
+    rgba(255, 255, 255, 0) 60%
+  );
+}
+
+h1 {
+ font-family:'Syncopate', sans-serif;
+}
+
+.shadow-xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  @apply max-h-[60vh];
+}
+
+.mobile-waffle, .waffle-shadow{
+  min-width: calc(100vw + 50%);
+}
+
+.waffle-shadow {
+  max-height:100vh
+}
+
+.circle-shadow{
+  min-width:300px;
+  max-width:300px;
+  margin:0 auto;
+  overflow:hidden;
+  transform:translateY(-40%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+}
+
+.mid-content {
+  padding-inline: 2rem;
+  min-width: 100%;
+  @apply absolute mt-[110px] z-10  w-full max-w-[300px]
+}
+
+.sticky-title {
+  font-size: 3em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: top 0.5s ease-out, font-size 0.5s ease-out;
+}
+
+
+@media (min-width:385px) {
+  .mid-content {
+    padding-inline: 5rem;
+    @apply mt-[70px] 
+  }
+}
+
+@media (min-width:522px) {
+  .mid-content {
+    padding-inline: 6rem;
+    @apply mt-[30px]
+  }
+}
