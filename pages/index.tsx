@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import circle from "../public/Rectangle.webp"
 import Image from 'next/image';
 import mobileBackground from '../public/mobileBackground.webp'
-import join from "../public/join.png"
+import join from "../public/join.webp"
 export default function Home() {
 
   useEffect(() => {
