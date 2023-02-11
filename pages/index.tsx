@@ -41,7 +41,7 @@ export default function Home() {
         <Image unoptimized={true} className="md:hidden absolute shadow-xl mobile-waffle  h-[600px] md:h-[800px] top-0 opacity-50 -translate-x-[50%]  translate-y-24 md:translate-y-8" src={mobileBackground} alt="waffle for background"/>
         <div className="absolute waffle-shadow -translate-x-[60%] inset-0 h-[600px] md:h-[800px] top-0  rounded-lg bg-white-shadow opacity-75"></div>
         <div className="absolute circle-shadow  md:hidden  top-[0] md:top-[0%] inset-0 h-[300px] md:h-[500px] top-0  rounded-lg bg-white-shadow opacity-75"></div>
-          <div className='absolute center-div flex flex-col justify-center items-center'>
+          <div className='absolute left-animation center-div flex flex-col justify-center items-center'>
             <h1 className='title   max-w-[400px]  flex justify-center z-10 text-white font-semibold text-3xl md:text-6xl text-center'>Focus on Your Craft. Leave the Rest to Us.</h1>
             <p className='font-Raleway mid-content text-white  text-justify text-center top-[200px] flex justify-center'>Unleash the power of your art. Monetize, build your brand and connect with collectors.</p>
             <a href="https://twitter.com" className='flex w-full justify-center'><Image className='top-[400px]  w-[200px]'alt="join beta button" src={join}></Image></a>
