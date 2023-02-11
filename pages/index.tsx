@@ -37,8 +37,8 @@ export default function Home() {
       </Head>
       <main className='main bg-black px-4 min-h-[100vh]'>
         <div className='w-full flex flex-col relative'>
-        <Image unoptimized={true} className='h-[200px]  shadow-xl -translate-y-20 m-auto w-auto background-bottom-right'alt="gradient circle" src={circle}></Image>
-        <Image unoptimized={true} className="md:hidden absolute shadow-xl mobile-waffle  h-[600px] md:h-[800px] top-0 opacity-50 -translate-x-[50%]  translate-y-24 md:translate-y-8" src={mobileBackground} alt="waffle for background"/>
+        <Image className='h-[200px]  shadow-xl -translate-y-20 m-auto w-auto background-bottom-right'alt="gradient circle" src={circle}></Image>
+        <Image className="md:hidden absolute shadow-xl mobile-waffle  h-[600px] md:h-[800px] top-0 opacity-50 -translate-x-[50%]  translate-y-24 md:translate-y-8" src={mobileBackground} alt="waffle for background"/>
         <div className="absolute waffle-shadow -translate-x-[60%] inset-0 h-[600px] md:h-[800px] top-0  rounded-lg bg-white-shadow opacity-75"></div>
         <div className="absolute circle-shadow  md:hidden  top-[0] md:top-[0%] inset-0 h-[300px] md:h-[500px] top-0  rounded-lg bg-white-shadow opacity-75"></div>
           <div className='absolute left-animation center-div flex flex-col justify-center items-center'>
