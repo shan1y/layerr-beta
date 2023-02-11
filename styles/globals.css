@@ -50,11 +50,7 @@ h1 {
   );
 }
 
-.mid-content {
-  padding-inline: 2rem;
-  min-width: 100%;
-  @apply absolute mt-[110px] z-10  w-full max-w-[300px]
-}
+
 
 .sticky-title {
   font-size: 3em;
@@ -69,16 +65,15 @@ h1 {
   font-family:'Raleway', sans-serif;
 }
 
-@media (min-width:385px) {
-  .mid-content {
-    padding-inline: 5rem;
-    @apply mt-[70px] 
-  }
+
+.center-div {
+  margin-top:4rem;
+  gap:2rem;
+  @apply w-full flex flex-col justify-center items-center absolute top-0 left-0 min-h-[80vh];
 }
 
-@media (min-width:522px) {
-  .mid-content {
-    padding-inline: 6rem;
-    @apply mt-[30px]
-  }
+
+.mid-content {
+text-align:justify;
+max-width:300px;
 }
