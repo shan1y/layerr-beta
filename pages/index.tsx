@@ -8,13 +8,13 @@ import join from "../public/join.webp"
 export default function Home() {
 
   useEffect(() => {
-    // setTimeout(() => {
+    setTimeout(() => {
     gsap.to('.main', {
       duration: 2,
       opacity: 1,
       ease: "sine.out",
     })
-    // }, 1000)
+    }, 1000)
   }, []);
 
 
