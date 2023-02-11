@@ -48,6 +48,13 @@ h1 {
     rgba(255, 255, 255, 0.15) 50%,
     rgba(255, 255, 255, 0) 60%
   );
+  @apply md:min-w-[550px] 
+}
+
+@layer utility {
+  .bg-md-gradient {
+    background: var(--md-gradient);
+  }
 }
 
 .main-content {
@@ -95,4 +102,11 @@ h1 {
 .mid-content {
 text-align:justify;
 max-width:300px;
+}
+
+
+@media (min-width: 768px) {
+  .circle-shadow{
+  background:radial-gradient( circle, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 75%)
+  }
 }

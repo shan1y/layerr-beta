@@ -38,13 +38,13 @@ export default function Home() {
       </Head>
       <main className=' bg-black px-4 min-h-[100vh]'>
         <div className='w-full main-content flex flex-col relative'>
-        <Image className='h-[200px]  shadow-xl -translate-y-20 m-auto w-auto background-bottom-right'alt="gradient circle" src={circle}></Image>
-        <Image className="md:hidden absolute shadow-xl mobile-waffle  h-[600px] md:h-[800px] top-0 opacity-50 -translate-x-[50%]  translate-y-24 md:translate-y-8" src={mobileBackground} alt="waffle for background"/>
+        <Image className='h-[200px] z-20 -translate-y-20 m-auto w-auto background-bottom-right'alt="gradient circle" src={circle}></Image>
+        <Image className=" absolute shadow-xl mobile-waffle md:-top-[100px]  h-[600px] md:min-h-[700px] top-0 opacity-50 -translate-x-[50%]  translate-y-24 md:translate-y-8" src={mobileBackground} alt="waffle for background"/>
         <div className="absolute waffle-shadow -translate-x-[60%] inset-0 h-[600px] md:h-[800px] top-0  rounded-lg bg-white-shadow opacity-75"></div>
-        <div className="absolute circle-shadow  md:hidden  top-[0] md:top-[0%] inset-0 h-[300px] md:h-[500px] top-0  rounded-lg bg-white-shadow opacity-75"></div>
+        <div className="absolute circle-shadow  top-[0] md:top-[0%] inset-0 h-[300px] md:h-[500px] top-0  rounded-lg bg-white-shadow opacity-75"></div>
           <div className='absolute left-animation center-div flex flex-col justify-center items-center'>
-            <h1 className='title   max-w-[400px]  flex justify-center z-10 text-white font-semibold text-3xl md:text-6xl text-center'>Focus on Your Craft. Leave the Rest to Us.</h1>
-            <p className='font-Raleway mid-content text-white  text-justify text-center top-[200px] flex justify-center'>Unleash the power of your art. Monetize, build your brand and connect with collectors.</p>
+            <h1 className='title   max-w-[400px]  flex justify-center z-10 text-white font-semibold text-3xl md:text-4xl text-center'>Focus on Your Craft. Leave the Rest to Us.</h1>
+            <p className='font-Raleway mid-content text-white  text-justify md:text-xl text-center top-[200px] flex justify-center'>Unleash the power of your art. Monetize, build your brand and connect with collectors.</p>
             <a href="https://twitter.com" className='flex w-full justify-center'><Image className='top-[400px]  w-[200px]'alt="join beta button" src={join}></Image></a>
         </div>
       </div>
