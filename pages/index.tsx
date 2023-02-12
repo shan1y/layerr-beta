@@ -15,7 +15,6 @@ export default function Home() {
   const [dots, setDots] = useState([0.5, 0.5, 0.5, 0.5]);
 
   useEffect(() => {
-    console.log("running")
     if(isLoading===false){
     setTimeout(() => {
     gsap.to('.main-content', {
@@ -23,7 +22,7 @@ export default function Home() {
       opacity: 1,
       ease: "sine.out",
     })
-    }, 500)}
+    }, 0)}
   }, [isLoading]);
 
   useEffect(() => {
