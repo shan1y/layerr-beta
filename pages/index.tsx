@@ -7,19 +7,69 @@ import mobileBackground from '../public/mobileBackground.webp'
 import desktopBackgroud from '../public/largeBackground.png'
 import join from "../public/join.webp"
 import Socials from '../components/socials';
+import { useState } from 'react';
 
 
 export default function Home() {
+  const [isLoading,setIsLoading] = useState(true)
+  const [dots, setDots] = useState([0.5, 0.5, 0.5, 0.5]);
 
   useEffect(() => {
+    console.log("running")
+    if(isLoading===false){
     setTimeout(() => {
     gsap.to('.main-content', {
-      duration: 3,
+      duration: 1,
       opacity: 1,
       ease: "sine.out",
     })
-    }, 500)
-  }, []);
+    }, 1000)}
+  }, [isLoading]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      gsap.to('.dot1', {
+        duration: 0.5,
+        opacity: 1,
+        ease: 'sine.out',
+      });
+    }, 500);
+    setTimeout(() => {
+      gsap.to('.dot2', {
+        duration: 1,
+        opacity: 1,
+        ease: 'sine.out',
+      });
+    }, 1000);
+    setTimeout(() => {
+      gsap.to('.dot3', {
+        duration: 1.5,
+        opacity: 1,
+        ease: 'sine.out',
+      });
+    }, 1500);
+    setTimeout(() => {
+      gsap.to('.dot4', {
+        duration: 2,
+        opacity: 1,
+        ease: 'sine.out',
+      });
+      setIsLoading(false);
+    }, 2000);
+  }, [dots]);
+
+  if (isLoading === true) {
+    return (
+      <div style={{ textAlign: 'center', marginTop: '50vh' }}>
+        {dots.map((dot, i) => (
+          <span key={i} className={`dot${i + 1}`} style={{ opacity: dot, fontSize: '50px', color: 'white' }}>
+            .
+          </span>
+        ))}
+      </div>
+    );
+  }
+
 
 
   return (
