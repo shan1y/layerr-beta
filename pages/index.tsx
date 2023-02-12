@@ -23,7 +23,7 @@ export default function Home() {
       opacity: 1,
       ease: "sine.out",
     })
-    }, 1000)}
+    }, 500)}
   }, [isLoading]);
 
   useEffect(() => {
@@ -60,7 +60,7 @@ export default function Home() {
 
   if (isLoading === true) {
     return (
-      <div style={{ textAlign: 'center', marginTop: '50vh' }}>
+      <div style={{ textAlign: 'center', marginTop: '40vh' }}>
         {dots.map((dot, i) => (
           <span key={i} className={`dot${i + 1}`} style={{ opacity: dot, fontSize: '50px', color: 'white' }}>
             .

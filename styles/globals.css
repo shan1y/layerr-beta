@@ -67,7 +67,7 @@ body {
 
 .left-animation {
   opacity: 1;
-  animation: fadeInLeft 0.75s ease-in-out;
+  animation: fadeInLeft 1s ease-in-out;
   animation-delay: 0s;
 }
 
@@ -106,7 +106,7 @@ body {
 
 
 .center-div {
-  margin-top:8rem;
+  margin-top:7rem;
   gap:2rem;
   @apply w-full flex flex-col justify-center items-center absolute top-0 md:mt-36 left-0 min-h-[80vh];
 }
@@ -131,17 +131,3 @@ max-width:300px;
   }
 }
 
-
-.loading-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.dot {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  margin: 0 10px;
-}

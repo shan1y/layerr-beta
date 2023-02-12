@@ -9,7 +9,7 @@ function socials(){
     return(
         <section className="flex bg-black flex-col gap-2 items-center lg:flex-row lg:m-8 lg:gap-8 lg:fixed lg:w-full">
         <p className="text-white font-Raleway text-center lg:hidden">Contact Us</p>
-        <ul className="flex order-2 gap-2">
+        <ul className="flex lg:order-2 gap-2">
         <li>
         <Image src={twitter} alt="twitter" className='w-[30px] h-[30px] lg:w-[45px] lg:h-[45px]'></Image>
         </li>
