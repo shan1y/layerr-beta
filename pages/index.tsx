@@ -18,7 +18,7 @@ export default function Home() {
       opacity: 1,
       ease: "sine.out",
     })
-    }, 2000)
+    }, 500)
   }, []);
 
 

@@ -74,7 +74,7 @@ body {
 
 .left-animation-desktop {
   opacity: 1;
-  animation: fadeInLeft 1s ease-in-out;
+  animation: fadeInLeft-desktop 1s ease-in-out;
   animation-delay: 1s;
 }
 
@@ -88,7 +88,7 @@ body {
   }
 }
 
-@keyframes fadeInLeft {
+@keyframes fadeInLeft-desktop {
   from {
     opacity: 0;
     transform: translateX(-10rem);
