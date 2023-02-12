@@ -54,11 +54,11 @@ export default function Home() {
         <h1 className='title lg:w-[800px] z-10 text-white font-semibold text-3xl lg:text-5xl text-left'>Focus on Your Craft,<br/> Leave the Rest to Us.</h1>
         <a href="https://twitter.com" className='flex w-full '><Image className='top-[400px]  w-[200px]'alt="join beta button" src={join}></Image></a>
         </div>
-        <div className='flex flex-col min-h-[80vh]  justify-end'>
+        <div className='flex flex-col min-h-[80vh] justify-center'>
         <div className="w-[700px] mt-36 flex justify-center items-center  top-0 left-[45%] absolute min-h-[80vh] ">
-        <Image src={desktopBackgroud} alt="waffle for background" className=' cover   max-w-[650px]  -z-10'></Image>
+        <Image src={desktopBackgroud} alt="waffle for background" className=' cover   w-[650px]  -z-10'></Image>
         </div>
-        <p className='hidden w-[400px] lg:-translate-y-[10px] xl:-translate-y-[50px] font-Raleway text-white lg:flex md:text-xl '>Unleash the power of your art. Monetize, build your brand and connect with collectors.</p>
+        <p className='hidden w-[400px] mt-[540px] lg:translate-x-[10px] xl:translate-x-[50px] lg:-translate-y-[50px] xl:-translate-y-[50px] font-Raleway text-white lg:flex md:text-xl '>Unleash the power of your art. Monetize, build your brand and connect with collectors.</p>
         </div>
         </div>
       </main>
