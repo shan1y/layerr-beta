@@ -18,7 +18,7 @@ export default function Home() {
       opacity: 1,
       ease: "sine.out",
     })
-    }, 1000)
+    }, 2000)
   }, []);
 
 
@@ -41,7 +41,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=' bg-black px-4 min-h-[100vh]'>
-      <div className="hidden max-w-[1280px] m-auto lg:flex main-content">
+      <div className="hidden max-w-[1280px] m-auto lg:flex main-content left-animation-desktop">
         <Socials/>
       </div>
         <div className='w-full main-content flex flex-col relative'>
@@ -58,7 +58,7 @@ export default function Home() {
       </div>
         </div>
       </div>
-      <div className='hidden z-10 max-w-[1280px] left-animation m-auto  main-content  relative lg:flex flex min-h-[100vh] px-[2%] items-center'>
+      <div className='hidden z-10 max-w-[1280px] left-animation-desktop m-auto  main-content  relative lg:flex flex min-h-[100vh] px-[2%] items-center'>
         <div className='flex -translate-y-[40px]   gap-12 min-w-[600px] flex-col '>
         <h1 className='title lg:w-[800px] z-10 text-white font-semibold text-3xl lg:text-5xl text-left'>Focus on Your Craft,<br/> Leave the Rest to Us.</h1>
         <a href="https://twitter.com" className='flex w-full '><Image className='top-[400px]  w-[200px]'alt="join beta button" src={join}></Image></a>
