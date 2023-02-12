@@ -14,7 +14,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
     gsap.to('.main-content', {
-      duration: 2,
+      duration: 3,
       opacity: 1,
       ease: "sine.out",
     })

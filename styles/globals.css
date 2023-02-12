@@ -68,14 +68,14 @@ body {
 .left-animation {
   opacity: 1;
   animation: fadeInLeft 0.75s ease-in-out;
-  animation-delay: 1s;
+  animation-delay: 0s;
 }
 
 
 .left-animation-desktop {
   opacity: 1;
   animation: fadeInLeft-desktop 1s ease-in-out;
-  animation-delay: 1s;
+  animation-delay: 0s;
 }
 
 @keyframes fadeInLeft {
