@@ -41,7 +41,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=' bg-black px-4 min-h-[100vh]'>
-      <div className="hidden max-w-[1280px] m-auto lg:flex lg:main-content">
+      <div className="hidden max-w-[1280px] m-auto lg:flex main-content">
         <Socials/>
       </div>
         <div className='w-full main-content flex flex-col relative'>
