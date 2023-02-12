@@ -6,6 +6,9 @@ import Image from 'next/image';
 import mobileBackground from '../public/mobileBackground.webp'
 import desktopBackgroud from '../public/largeBackground.png'
 import join from "../public/join.webp"
+import Socials from '../components/socials';
+
+
 export default function Home() {
 
   useEffect(() => {
@@ -31,13 +34,16 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
-      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet"></link>
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
-      <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
+        <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=' bg-black px-4 min-h-[100vh]'>
+      <div className="hidden lg:flex lg:main-content">
+        <Socials/>
+      </div>
         <div className='w-full main-content flex flex-col relative'>
         <Image className='h-[200px] z-20 -translate-y-20 m-auto w-auto background-bottom-right lg:hidden'alt="gradient circle" src={circle}></Image>
         <Image className=" absolute shadow-xl mobile-waffle md:-top-[100px]  h-[600px] md:min-h-[700px] top-0 opacity-50 -translate-x-[50%] lg:hidden  translate-y-24 md:translate-y-8 lg:hidden" src={mobileBackground} alt="waffle for background"/>
@@ -47,6 +53,9 @@ export default function Home() {
             <h1 className='title   max-w-[400px]  flex justify-center z-10 text-white font-semibold text-3xl md:text-4xl text-center'>Focus on Your Craft. Leave the Rest to Us.</h1>
             <p className='font-Raleway mid-content text-white  text-justify md:text-xl text-center top-[200px] flex justify-center'>Unleash the power of your art. Monetize, build your brand and connect with collectors.</p>
             <a href="https://twitter.com" className='flex w-full justify-center'><Image className='top-[400px]  w-[200px]'alt="join beta button" src={join}></Image></a>
+            <div className="lg:hidden">
+        <Socials/>
+      </div>
         </div>
       </div>
       <div className='hidden z-10 max-w-[1280px] left-animation m-auto  main-content  relative lg:flex flex min-h-[100vh] px-[2%] items-center'>
@@ -55,7 +64,7 @@ export default function Home() {
         <a href="https://twitter.com" className='flex w-full '><Image className='top-[400px]  w-[200px]'alt="join beta button" src={join}></Image></a>
         </div>
         <div className='flex flex-col min-h-[80vh] justify-center'>
-        <div className="w-[700px] mt-36 flex justify-center items-center  top-0 left-[45%] absolute min-h-[80vh] ">
+        <div className=" mt-36 flex justify-center items-center  top-0 left-[45%] absolute min-h-[80vh] ">
         <Image src={desktopBackgroud} alt="waffle for background" className=' cover   w-[650px]  -z-10'></Image>
         </div>
         <p className='hidden w-[400px] mt-[540px] lg:translate-x-[10px] xl:translate-x-[50px] lg:-translate-y-[50px] xl:-translate-y-[50px] font-Raleway text-white lg:flex md:text-xl '>Unleash the power of your art. Monetize, build your brand and connect with collectors.</p>

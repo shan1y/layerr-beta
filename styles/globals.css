@@ -61,6 +61,10 @@ h1 {
   opacity: 0;
 }
 
+body {
+  background-color:black;
+}
+
 .left-animation {
   opacity: 1;
   animation: fadeInLeft 0.75s ease-in-out;
@@ -93,9 +97,9 @@ h1 {
 
 
 .center-div {
-  margin-top:4rem;
+  margin-top:8rem;
   gap:2rem;
-  @apply w-full flex flex-col justify-center items-center absolute top-0 left-0 min-h-[80vh];
+  @apply w-full flex flex-col justify-center items-center absolute top-0 md:mt-36 left-0 min-h-[80vh];
 }
 
 
@@ -118,11 +122,3 @@ max-width:300px;
   }
 }
 
-.flex-left{
-  flex:0.6
-}
-
-.flex-right{
-flex:0.4;
-flex-grow:1
-}
