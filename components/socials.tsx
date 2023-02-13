@@ -28,7 +28,7 @@ function socials(){
         </ul>
         <div className="flex items-center justify-center">
             <a href="https://www.layerr.xyz" target={"_blank"} rel="noreferrer">
-        <Image placeholder="blur" src={logo} alt="layerr logo" className="w-auto mt-2 order-1 h-[20px] md:h-[30px]  lg:h-[30px]"></Image>
+        <Image placeholder="blur" src={logo} alt="layerr logo" className="w-auto mt-2 lg:mt-0 order-1 h-[20px] md:h-[30px]  lg:h-[30px]"></Image>
         </a>
         </div>
         </section>
