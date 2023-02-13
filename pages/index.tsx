@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import circle from "../public/Rectangle.webp"
 import Image from 'next/image';
 import mobileBackground from '../public/mobileBackground.webp'
-import desktopBackgroud from '../public/largeBackground.png'
+import desktopBackgroud from '../public/largeBackground.webp'
 import join from "../public/join.webp"
 import Socials from '../components/socials';
 import { useState } from 'react';
@@ -74,7 +74,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Join Beta</title>
+        <title>Layerr - Join Beta</title>
         <link rel="preload" as="image" href="	https://layerr-join-beta.netlify.app/_next/image?u…atic%2Fmedia%2FRectangle.e4533d54.webp&w=828&q=75" />
         <link rel="preload" as="image" href="https://layerr-join-beta.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FmobileBackground.6aa2f645.webp&w=1920&q=75" />
         <link rel="preload" as="image" href="https://layerr-join-beta.netlify.app/_next/image?u…tic%2Fmedia%2FRectangle.e4533d54.webp&w=1920&q=75"/>
