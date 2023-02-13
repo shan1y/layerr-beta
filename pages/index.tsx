@@ -116,7 +116,7 @@ export default function Home() {
         </div>
         <div className='flex flex-col min-h-[80vh] justify-center'>
         <div className=" mt-36 flex justify-center items-center  top-0 left-[45%] absolute min-h-[80vh] ">
-        <Image quality={50} placeholder="blur" src={largeBackground} alt="waffle for background" className=' cover   w-[650px]  -z-10'></Image>
+        <Image quality={50} priority placeholder="blur" src={largeBackground} alt="waffle for background" className=' cover   w-[650px]  -z-10'></Image>
         </div>
         <p className='hidden w-[400px] mt-[580px] lg:translate-x-[10px] xl:translate-x-[50px] lg:-translate-y-[50px] xl:-translate-y-[50px] font-Raleway text-white lg:flex md:text-xl '>Unleash the power of your art. Monetize, build your brand and connect with collectors.</p>
         </div>
