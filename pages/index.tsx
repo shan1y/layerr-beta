@@ -95,8 +95,8 @@ export default function Home() {
         <Socials/>
       </div>
         <div className='w-full main-content flex flex-col relative'>
-        <Image className='h-[200px] z-20 -translate-y-20 m-auto w-auto background-bottom-right lg:hidden'alt="gradient circle" src={circle}></Image>
-        <Image className=" absolute shadow-xl mobile-waffle md:-top-[100px]  h-[600px] md:min-h-[700px] top-0 opacity-50 -translate-x-[50%] lg:hidden  translate-y-24 md:translate-y-8 lg:hidden" src={mobileBackground} alt="waffle for background"/>
+        <Image placeholder="blur" className='h-[200px] z-20 -translate-y-20 m-auto w-auto background-bottom-right lg:hidden'alt="gradient circle" src={circle}></Image>
+        <Image placeholder="blur" className=" absolute shadow-xl mobile-waffle md:-top-[100px]  h-[600px] md:min-h-[700px] top-0 opacity-50 -translate-x-[50%] lg:hidden  translate-y-24 md:translate-y-8 lg:hidden" src={mobileBackground} alt="waffle for background"/>
         <div className="absolute waffle-shadow -translate-x-[60%] inset-0 h-[600px] md:h-[800px] top-0  rounded-lg bg-white-shadow opacity-75 lg:hidden"></div>
         <div className="absolute circle-shadow  top-[0] md:top-[0%] inset-0 h-[300px] md:h-[500px] top-0  rounded-lg bg-white-shadow opacity-75 lg:hidden"></div>
           <div className='absolute  left-animation center-div flex flex-col justify-center items-center lg:hidden'>
@@ -115,7 +115,7 @@ export default function Home() {
         </div>
         <div className='flex flex-col min-h-[80vh] justify-center'>
         <div className=" mt-36 flex justify-center items-center  top-0 left-[45%] absolute min-h-[80vh] ">
-        <Image src={desktopBackgroud} alt="waffle for background" className=' cover   w-[650px]  -z-10'></Image>
+        <Image placeholder="blur" src={desktopBackgroud} alt="waffle for background" className=' cover   w-[650px]  -z-10'></Image>
         </div>
         <p className='hidden w-[400px] mt-[540px] lg:translate-x-[10px] xl:translate-x-[50px] lg:-translate-y-[50px] xl:-translate-y-[50px] font-Raleway text-white lg:flex md:text-xl '>Unleash the power of your art. Monetize, build your brand and connect with collectors.</p>
         </div>
