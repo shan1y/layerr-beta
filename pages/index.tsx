@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import circle from "../public/Rectangle.webp"
 import Image from 'next/image';
 import mobileBackground from '../public/mobileBackground.webp'
-import desktopBackgroud from '../public/largeBackground.webp'
+import largeBackground from "../public/Group-25.webp"
 import join from "../public/join.webp"
 import Socials from '../components/socials';
 import { useState } from 'react';
@@ -115,9 +115,9 @@ export default function Home() {
         </div>
         <div className='flex flex-col min-h-[80vh] justify-center'>
         <div className=" mt-36 flex justify-center items-center  top-0 left-[45%] absolute min-h-[80vh] ">
-        <Image placeholder="blur" src={desktopBackgroud} alt="waffle for background" className=' cover   w-[650px]  -z-10'></Image>
+        <Image placeholder="blur" src={largeBackground} alt="waffle for background" className=' cover   w-[650px]  -z-10'></Image>
         </div>
-        <p className='hidden w-[400px] mt-[540px] lg:translate-x-[10px] xl:translate-x-[50px] lg:-translate-y-[50px] xl:-translate-y-[50px] font-Raleway text-white lg:flex md:text-xl '>Unleash the power of your art. Monetize, build your brand and connect with collectors.</p>
+        <p className='hidden w-[400px] mt-[580px] lg:translate-x-[10px] xl:translate-x-[50px] lg:-translate-y-[50px] xl:-translate-y-[50px] font-Raleway text-white lg:flex md:text-xl '>Unleash the power of your art. Monetize, build your brand and connect with collectors.</p>
         </div>
         </div>
       </main>
